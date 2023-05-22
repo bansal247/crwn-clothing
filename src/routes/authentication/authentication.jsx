@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { getRedirectResult } from "firebase/auth";
 
 import { signInWithGooglePopup,
@@ -24,8 +24,6 @@ const Authentication = (props) => {
     //     redirectFetch();
         
     // },[]);
-
-    
 
   return (
     <div className="authentication-container">
