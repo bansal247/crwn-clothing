@@ -5,6 +5,7 @@
     height: 350px;
     align-items: center;
     position: relative;
+    overflow:visible ;
   
     img {
       width: 100%;
@@ -39,14 +40,14 @@
       justify-content: space-between;
       font-size: 18px;
   
-      .name {
-        width: 90%;
-        margin-bottom: 15px;
-      }
+      // .name {
+      //   width: 70%;
+      //   margin-bottom: 15px;
+      // }
   
-      .price {
-        width: 10%;
-      }
+      // .price {
+      //   width: 30%;
+      // }
     }
   }
   
