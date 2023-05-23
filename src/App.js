@@ -5,7 +5,7 @@ import Authentication from "./routes/authentication/authentication";
 import { UserContext } from "./context/user.context";
 import { useContext } from "react";
 import Shop from "./routes/shop/shop.componenet";
-
+import Checkout from "./routes/checkout/checkout.componenet";
 
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
         <Route path='shop' element = {<Shop/>} />
         {/* <Route path='auth' element = {<Authentication/>} /> */}
         <Route path="/auth" element={ currentUser ? <Navigate to="/" /> : <Authentication /> }/>
+        <Route path='checkout' element = {<Checkout/>} />
       </Route>
     </Routes>
   ) ;
