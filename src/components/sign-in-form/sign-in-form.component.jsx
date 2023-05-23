@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { signInAuthUserWithEmailAndPassword,createUserDocumentFromAuth, signInWithGooglePopup } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.componenet";
 import './sign-in-form.styles.scss';
-import Button from "../button/button.componenet";
+import Button, {BUTTON_TYPES_CLASSES} from "../button/button.componenet";
 import { UserContext } from "../../context/user.context";
 
 
@@ -68,7 +68,7 @@ const SignInForm = (props) => {
         <FormInput label='Password' type="password" required onChange={handleChange} name="password" value={password}/>
         <div className="buttons-container">
         <Button  type="submit">Sign In</Button>
-        <Button type='button' buttonType='google' onClick={signInWithGoogle}>GOOGLE SIGN IN</Button>
+        <Button type='button' buttonType={BUTTON_TYPES_CLASSES.google} onClick={signInWithGoogle}>GOOGLE SIGN IN</Button>
         </div>
         
       </form>
