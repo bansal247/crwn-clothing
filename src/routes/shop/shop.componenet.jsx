@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 
 import CategoriesPreview from '../categories-preview/categories-preview.componenet';
 import Category from '../category/category.component';
+import { CategoriesProvider } from '../../context/categories.context';
+
 const Shop = (props) => {
   
   return (
